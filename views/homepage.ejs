@@ -1,0 +1,63 @@
+
+    <div class="navbar" id="navbar">
+        <div class="logo " id="logo">
+            <img class="noselect" src="/styles/images/companylogo.png" >
+            <p class="noselect">Meditech</p>
+        </div>
+        <div class="buttons noselect" id="buttons">
+            <!-- <button class="loginbtn unlogged" id="loginbtn"  >LOGIN</button>
+            <button class="signupbtn unlogged" id="signupbtn" onclick="location.href = 'Signup.html';" >SIGNUP</button> -->
+            <button class="signoutbtn logged" id="signoutbtn"  >SIGNOUT</button>
+        </div>
+      </div>
+  
+      <div class="mainPage" id="mainPage">
+        <div id="personalInfo" class="personalInfo">
+          <h1>Hello <span class="name"><%=fname%> <%=lname%></span></h1>
+          <h3>We hope you are taking care of your health </h3>
+          <h4>Here's the info we know about you</h4>
+          <div class="containerofItems" id="container">
+  
+            <div class="item gender" id="gender">
+              <div class="genderText" id="genderText"><%=gender%></div>
+              <%if(gender=='Male'){%>
+              <img src="/styles/images/3dman.jpg" alt="gender" class="genderImage">
+              <%}else{%>
+              <img src="/styles/images/3dwomen.jpg" alt="gender" class="genderImage"><% } %>
+            </div>
+  
+            <div class="item age" id="age">
+              <div class="ageText" id="ageText"><span class="yearnumber"><%=age%></span> <br>years old</div>
+            </div>
+  
+            <div class="item bloodGroup" id="bloodGroup">
+              <div class="bloodGroupText" id="bloodGroupText"><%=bloodGroup%></div>
+              
+            </div>
+  
+            <div class="item height" id="height">
+              <div class="heightText" id="heightText"><span class="feet"><%=heightFeet%></span>ft <br><span class="inches"><%=heightInches%></span>in</div>
+              
+            </div>
+          </div>
+  
+  
+          <button class="editInfo" id="editInfo"  >Edit my info</button>
+          <script>
+            document.getElementById("editInfo").onclick = function() {
+              //create a new url
+              var url= new URL(window.location.href);
+              url.pathname=`/users/edit${url.pathname}`;
+              location.href=url;
+            };
+            document.getElementById("signoutbtn").onclick = function() {
+              //create a new url
+              var url= new URL(window.location.href);
+              url.pathname=`/users/login`;
+              location.href=url;
+            };
+
+          </script>
+        </div>
+      </div>
+      

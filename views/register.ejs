@@ -1,0 +1,66 @@
+
+  
+
+
+<div class="logo " id="logo">
+    <img class="noselect" src="/styles/images/companylogo.png" alt="logo">
+    <p class="noselect">Meditech</p>
+</div>
+
+<div class="global-signup">    
+    <div class="image-sign">
+        <!-- <div class="sideimage">
+          <img src="#" alt="signupImage">
+        </div> -->
+
+        <div class="signup">
+            <div class="heading">Create Account</div>
+            <p>Please enter your details</p>
+            <form class="form" method="post">
+                <div class="formbox">
+                    <div class="inputLabel">Email</div>
+                    <div class="inputAndIcon">
+                        <input id="email" name="email" type="email" placeholder="mymail@example.com" class=" email" required autocomplete="on" minlength="8" ><!--Built in works fine--> 
+                        <div class="icon ">
+                            <i class="fa-solid fa-id-badge"></i>
+                        </div>
+                </div>
+                </div>
+                <div class="formbox">
+                    <div class="inputLabel">Password</div>
+                    <div class="inputAndIcon">
+                        <input id="password" name="password" type="password" placeholder="password must be 8 character long with a number and character" class="password"  required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" ><!--This pattern in works fine-->
+                        <div class="icon ">
+                            <i class="fa-solid fa-key"></i>
+                        </div>
+                    </div>
+                    
+                </div>
+                    
+                <div class="formbox">
+                    <div class="inputLabel">Confirm Password</div>
+                    <div class="inputAndIcon">
+
+                <input id="confirmPassword"type="password" placeholder="repeat the password" class=" confirmPassword" required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"><!--Should match the password-->
+                <div class="icon ">
+                    <i class="fa-solid fa-key"></i>
+                </div>
+            </div>
+            
+        </div>
+                
+                <div class="regandlogin">
+                   <input type="submit" id="Register" value="Register" class="regbutton"> 
+                   <div class="orlogin">
+                    <div class="textandlink">Already registered? <a href="login">LOGIN</a></div> 
+                    
+                    
+                   </div>
+                </div>
+            </form>
+        </div>
+        
+    </div> 
+</div>
+<!-- <script src="../scripts/signupManage.js"></script> -->
+<script src="https://kit.fontawesome.com/dce6f087d0.js" crossorigin="anonymous"></script>

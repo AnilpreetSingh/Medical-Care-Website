@@ -1,0 +1,72 @@
+<div class="logo " id="logo">
+    <img class="noselect" src="/styles/images/companylogoFAVICON.png" alt="logo">
+    <p class="noselect">Meditech</p>
+</div>
+
+<div class="global-signup">    
+    <div class="image-sign">
+        <!-- <div class="sideimage">
+          <img src="#" alt="signupImage">
+        </div> -->
+
+        <div class="signup">
+            <div class="heading">Your Profile</div>
+            <!-- <br> -->
+            <form class="form" method="post">
+                <div class="names">
+                    <div class="nameAndLabel">
+                        <label for="fname">First Name</label>
+                        <input id="fname" name="fname" type="text" placeholder="First Name" class=" fname" value="<%=fname%>" required autocomplete="given-name"
+                        pattern="^[a-zA-Z]*$">
+                    </div>  <!--Should be textonly and can or cannot contain capital letters-->
+                    
+                    <div class="nameAndLabel">
+                        <label for="fname">Last Name</label>
+                    <input id="lname" name="lname" type="name" placeholder="Last Name" class=" lname" value="<%=lname%>" required autocomplete="family-name">
+                    </div> <!--Should be textonly and can or cannot contain capital letters-->
+                </div>
+                <!-- <input type="checkbox" value=""> -->
+                
+                <!-- <label for="gender" class="genderLabel">Gender</label> -->
+                <select id="gender" class="genderSelect" name="gender" autocomplete="sex" value="<%=gender%>" multiple required>
+                    <option selected>Male</option>
+                    <option>Female</option>
+                </select>
+
+                <br>
+                <label for="age" class="ageLabel">Age</label>
+                <input type="number" id="age" class="ageInput" name="age" value="<%=age%>" min="1" max="105" required>
+                <br>
+                <label for="bloodGroup" class="bloodGroupLabel">Blood Group</label>
+                <select id="bloodGroup" name="bloodGroup" class="bloodGroupInput" required>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                <br>
+                <div class="heightbar">
+                    <label class="heightLabel">Height:</label>
+                    <div class="heightInputAndLabel">
+                            <input type="number" min="1" max="8" name="feet" id="feet" placeholder="feet" value="<%=heightFeet%>" required>
+                            <label for="feet" class="feetLabel" >feet</label>
+                    </div>
+                    <div class="heightInputAndLabel">
+                        <input type="number" min="0" max="11" name="inches" id="inches" placeholder="inches" value="<%=heightInches%>" required>
+                        <label for="inches" class="inchesLabel">inches</label>
+                    </div>
+                </div>
+
+                <div class="regandlogin">
+                   <input type="submit" id="Register" value="Save" class="regbutton"> 
+
+                </div>
+            </form>
+        </div>
+        
+    </div> 
+</div>

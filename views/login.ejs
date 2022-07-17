@@ -1,0 +1,37 @@
+
+<div class="logo " id="logo">
+    <img class="noselect" src="/styles/images/companylogoFAVICON.png" alt="logo">
+    <p class="noselect">Meditech</p>
+</div>
+
+<div class="Loginbox">    
+    <div class="auth">
+        <div class="heading">Hello Again!</div>
+        <form method="post" class="inputForm" >
+
+            <label for="email" class="emailLabel" >Email</label>
+            <div class="inputAndIcon">
+                <input id="email" name="email" type="email" placeholder="Email" class="email" required autocomplete="on" minlength="8" >
+                <div class="icon ">
+                    <i class="fa-solid fa-id-badge"></i>
+                </div>
+            </div>
+            
+            <label for="password" >Password</label>
+            <div class="inputAndIcon">
+                <input id="password" name="password" type="password" placeholder="Password" class="password"  required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$" >
+            <div class="icon ">
+                <i class="fa-solid fa-key"></i>
+            </div>
+        </div>
+        
+
+            <input type="submit" id="login" value="Login" class="loginbtn"> 
+        </form>
+        <div class="signupText">
+            <p>New here?
+            <a href="/users/register" >Create Account</a></p>
+        </div>
+    </div>
+</div>
+<script src="https://kit.fontawesome.com/dce6f087d0.js" crossorigin="anonymous"></script>
